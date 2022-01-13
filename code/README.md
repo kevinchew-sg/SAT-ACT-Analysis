@@ -10,6 +10,23 @@ This project seeks to understand the trends behind SAT Participation Rate and SA
 * [`sat_2019.csv`](./data/sat_2019.csv): 2019 SAT Scores by State ([source](https://blog.prepscholar.com/average-sat-scores-by-state-most-recent))
 * [`us_median_household_income_2019.csv`](./data/us_median_household_income_2019.csv): Median Household Income by State ([source](https://data.census.gov/cedsci/map?q=S1901%3A%20INCOME%20IN%20THE%20PAST%2012%20MONTHS%20%28IN%202018%20INFLATION-ADJUSTED%20DOLLARS%29&g=0400000US01,02,04,05,06,08,09,10,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,53,54,55,56,72&y=2019&cid=S1901_C01_001E&vintage=2019&layer=VT_2019_040_00_PP_D1))
 
+### Data Dictionary
+
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|state|object|sat_scores_2018_and_2019|This displays the different states| 
+|pr_2018|float|sat_scores_2018_and_2019|This displays the participation rates for each states in 2018| 
+|ebrw_2018|int|sat_scores_2018_and_2019|This displays the ebrw scores for each states in 2018| 
+|math_2018|int|sat_scores_2018_and_2019|This displays the math scores for each states in 2018| 
+|total_2018|int|sat_scores_2018_and_2019|This displays the total i.e. summation scores of ebrw & math for each states in 2018| 
+|pr_2019|float|sat_scores_2018_and_2019|This displays the participation rates for each states in 2019| 
+|ebrw_2019|int|sat_scores_2018_and_2019|This displays the ebrw scores for each states in 2019| 
+|math_2019|int|sat_scores_2018_and_2019|This displays the math scores for each states in 2019| 
+|total_2019|int|sat_scores_2018_and_2019|This displays the total i.e. summation scores of ebrw & math for each states in 2019| 
+|delta_pr|float|sat_scores_2018_and_2019|This displays the change in participation rate from 2018 to 2019 for the different states|
+|delta_total|float|sat_scores_2018_and_2019|This displays the change in sat score from 2018 to 2019 for the different states|
+
+
 
 ### Executive Summary
 
@@ -20,7 +37,7 @@ At the same time, more colleges are dropping or are considering eliminating SAT 
 Thus, this project seeks to understand the trends behind SAT Participation Rate and SAT Score. More specifically, does an increase in SAT Participation Rate lead to an increase in SAT Score?
 
 The data does show an overall increase in Participation Rate from 2018 and 2019. Out of 51 states in the merged 
-dataset [`sat_scores_2018_and_2019.csv`], 45 states showed either the same or an increase in Participation Rate, whereas 6 states showed a decrease in Participation Rate. This decrease is very minimal though, with the largest decrease being 0.03 (or 3 %)
+dataset [`sat_scores_2018_and_2019.csv`](./code/sat_scores_2018_and_2019.csv), 45 states showed either the same or an increase in Participation Rate, whereas 6 states showed a decrease in Participation Rate. This decrease is very minimal though, with the largest decrease being 0.03 (or 3 %)
 
 This distribution of the Participation Rate is multimodal, with clusters observed at the two ends of the spectrum. This is likely due to the fact that some states (~20) are contracted with the College Board to administer the SAT for free. ([source](https://blog.prepscholar.com/which-states-require-the-sat)). 
 
