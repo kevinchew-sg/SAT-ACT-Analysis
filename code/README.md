@@ -2,7 +2,12 @@
 
 ### Problem Statement
 
-This project seeks to understand the trends behind SAT Participation Rate and SAT Score. More specifically, does an increase in SAT Participation Rate lead to an increase in SAT Score? 
+Over the past decade, programs have been enacted to increase the SAT Participation Rate amongst high school students. More specifically, these programs target students from less priviledged backgrounds and create more opportunities for them to take the test and subsequently apply for colleges. 
+
+Thus, since a good SAT Score is an important requirement for students to have a better chance at being admitted to their college of choice, this projects aims to study the relationship between SAT Participation Rate and SAT Score. 
+
+More specifically, does an increase in Participation Rate lead to an increae in SAT score for the different states in the United States of America? 
+
 
 ### Data Sources Used
  
